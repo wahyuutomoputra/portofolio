@@ -1,0 +1,26 @@
+# www.robotstxt.org
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://portofolio-gray-mu.vercel.app/sitemap.xml
+
+# Disallow crawling of admin or private areas if you have any
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Crawl-delay for specific bots if needed
+User-agent: GPTBot
+Crawl-delay: 10
+
+User-agent: AdsBot-Google
+Allow: /
+
+# Prevent media files from being crawled if needed
+# Disallow: /*.pdf$
+# Disallow: /*.doc$
+# Disallow: /*.jpg$
+# Disallow: /*.png$ 
