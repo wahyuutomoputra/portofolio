@@ -95,26 +95,26 @@ function downloadCV() {
       isScrolled ? 'bg-white/80 shadow-lg' : 'bg-transparent'
     ]">
       <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-        <h1 class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+        <h1 class="text-2xl font-bold bg-gradient-to-r from-green-500 to-green-600 bg-clip-text text-transparent">
           Wahyu Utomo
         </h1>
         <div class="flex gap-8">
-          <a href="#about" class="hover:text-indigo-600 transition-all hover:scale-105">About</a>
-          <a href="#projects" class="hover:text-indigo-600 transition-all hover:scale-105">Projects</a>
-          <a href="#contact" class="hover:text-indigo-600 transition-all hover:scale-105">Contact</a>
+          <a href="#about" class="hover:text-green-600 transition-all hover:scale-105">About</a>
+          <a href="#projects" class="hover:text-green-600 transition-all hover:scale-105">Projects</a>
+          <a href="#contact" class="hover:text-green-600 transition-all hover:scale-105">Contact</a>
         </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50">
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
       <div class="text-center px-4">
-        <div class="mb-8 text-indigo-600">
+        <div class="mb-8 text-green-600">
           <svg class="w-16 h-16 mx-auto animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
           </svg>
         </div>
-        <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-green-600 via-green-500 to-emerald-500 bg-clip-text text-transparent">
           Wahyu Utomo Putra
         </h1>
         <p class="text-xl text-gray-600 mb-8">
@@ -123,12 +123,12 @@ function downloadCV() {
         <div class="flex gap-4 justify-center">
           <button 
             @click="scrollToProjects"
-            class="bg-indigo-600 text-white px-8 py-3 rounded-full hover:bg-indigo-700 transition-all hover:scale-105 hover:shadow-lg">
+            class="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-all hover:scale-105 hover:shadow-lg">
             View My Work
           </button>
           <button 
             @click="downloadCV"
-            class="border-2 border-indigo-600 text-indigo-600 px-8 py-3 rounded-full hover:bg-indigo-50 transition-all hover:scale-105">
+            class="border-2 border-green-600 text-green-600 px-8 py-3 rounded-full hover:bg-green-50 transition-all hover:scale-105">
             <span class="flex items-center">
               <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -155,7 +155,7 @@ function downloadCV() {
           <h3 class="text-2xl font-semibold mb-4">Keahlian Utama</h3>
           <div class="flex flex-wrap gap-3 mb-8">
             <span v-for="skill in skills" :key="skill"
-              class="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium">
+              class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">
               {{ skill }}
             </span>
           </div>
@@ -188,12 +188,12 @@ function downloadCV() {
               <p class="text-gray-600 mb-4 line-clamp-3">{{ project.description }}</p>
               <div class="flex flex-wrap gap-2 mb-6">
                 <span v-for="tech in project.technologies" :key="tech"
-                  class="px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-sm font-medium hover:bg-indigo-100 transition-colors">
+                  class="px-3 py-1 bg-green-50 text-green-600 rounded-full text-sm font-medium hover:bg-green-100 transition-colors">
                   {{ tech }}
                 </span>
               </div>
               <a :href="project.link" target="_blank" rel="noopener"
-                class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-medium group">
+                class="inline-flex items-center text-green-600 hover:text-green-800 font-medium group">
                 View Project 
                 <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform" 
                   fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -207,7 +207,7 @@ function downloadCV() {
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gradient-to-b from-white to-indigo-50">
+    <section id="contact" class="py-20 bg-gradient-to-b from-white to-green-50">
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-4xl font-bold mb-8">Mari Terhubung</h2>
         <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
@@ -224,7 +224,7 @@ function downloadCV() {
             </span>
           </a>
           <a href="mailto:wahyuutomoputra@gmail.com"
-            class="group bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-3 rounded-full hover:shadow-lg transition-all hover:scale-105">
+            class="group bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-3 rounded-full hover:shadow-lg transition-all hover:scale-105">
             <span class="flex items-center">
               <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
