@@ -31,22 +31,22 @@ const projects = ref<Project[]>([
     id: 1,
     title:
       locale.value === "en"
-        ? "Face Recognition Based Attendance System"
-        : "Sistem Absensi Berbasis Face Recognition",
+        ? "Retailer Marketplace Platform"
+        : "Platform Marketplace untuk Pengecer",
     description:
       locale.value === "en"
-        ? "Attendance application using React Native and Express.js with face recognition features using OpenCV and TensorFlow for employee attendance validation."
-        : "Aplikasi absensi menggunakan React Native dan Express.js dengan fitur pengenalan wajah menggunakan OpenCV dan TensorFlow untuk validasi kehadiran karyawan.",
+        ? "A comprehensive marketplace platform connecting retailers with suppliers, featuring real-time inventory management, order tracking, and integrated payment systems. Built with React Native for mobile and Express.js backend."
+        : "Platform marketplace yang menghubungkan pengecer dengan supplier, dilengkapi dengan manajemen inventaris real-time, pelacakan pesanan, dan sistem pembayaran terintegrasi. Dibangun dengan React Native untuk mobile dan Express.js backend.",
     image:
-      "https://images.unsplash.com/photo-1587778082149-bd5b1bf5d3fa?q=80&w=800",
+      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=800",
     technologies: [
       "React Native",
-      "Express.js",
-      "OpenCV",
-      "TensorFlow",
+      "CodeIgniter 4",
       "MySQL",
+      "Biometric Authentication",
     ],
-    link: "https://github.com/yourusername/face-recognition",
+    link: "private",
+    screenshots: ["/kanvas/1.jpeg", "/kanvas/2.jpeg", "/kanvas/3.jpeg", "/kanvas/4.jpeg"],
   },
   {
     id: 2,
