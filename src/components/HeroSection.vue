@@ -29,8 +29,8 @@ defineEmits<{
           class="bg-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-all hover:scale-105 hover:shadow-lg">
           {{ t("hero.viewWork") }}
         </button>
-        <button @click="$emit('downloadCV')"
-          class="border-2 border-green-600 text-green-600 px-8 py-3 rounded-full hover:bg-green-50 transition-all hover:scale-105">
+        <a href="/cv-wahyu-utomo.pdf" download="CV-Wahyu-Utomo.pdf"
+           class="border-2 border-green-600 text-green-600 px-8 py-3 rounded-full hover:bg-green-50 transition-all hover:scale-105">
           <span class="flex items-center">
             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
@@ -38,7 +38,7 @@ defineEmits<{
             </svg>
             {{ t("hero.downloadCV") }}
           </span>
-        </button>
+        </a>
       </div>
     </div>
   </section>
