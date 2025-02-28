@@ -61,22 +61,22 @@ const projects = ref<Project[]>([
     image:
       "https://images.unsplash.com/photo-1611746872915-64382b5c76da?q=80&w=800",
     technologies: ["React Native", "Node.js", "WebSocket", "MySQL"],
-    link: "https://github.com/yourusername/marketplace-chat",
+    link: "private",
   },
   {
     id: 3,
     title:
       locale.value === "en"
-        ? "Authentication System with Rolling Refresh Token"
-        : "Sistem Autentikasi dengan Rolling Refresh Token",
+        ? "Asset Management System API"
+        : "API Sistem Manajemen Aset",
     description:
       locale.value === "en"
-        ? "Implementation of login system with rolling refresh token, HTTP-Only Cookie, and database-based session management in Express.js."
-        : "Implementasi sistem login dengan rolling refresh token, HTTP-Only Cookie, dan manajemen sesi berbasis database di Express.js.",
+        ? "RESTful API service built with Express.js featuring secure authentication with JWT rolling refresh tokens, HTTP-Only cookies for enhanced security, and database-driven session management. Includes comprehensive endpoints for asset tracking, user management, and reporting functionalities."
+        : "Layanan API RESTful dibangun dengan Express.js dilengkapi autentikasi aman menggunakan JWT rolling refresh token, HTTP-Only cookie untuk keamanan tinggi, dan manajemen sesi berbasis database. Mencakup endpoint lengkap untuk pelacakan aset, manajemen pengguna, dan fungsionalitas pelaporan.",
     image:
       "https://images.unsplash.com/photo-1555421689-d68471e189f2?q=80&w=800",
-    technologies: ["Node.js", "Express.js", "JWT", "MySQL"],
-    link: "https://github.com/yourusername/auth-system",
+    technologies: ["Node.js", "Express.js", "JWT", "MySQL", "TypeScript"],
+    link: "https://github.com/wahyuutomoputra/node-pmi-be",
   },
   {
     id: 4,
@@ -109,19 +109,41 @@ watch(locale, () => {
 });
 
 // Add skills data
-const skills = ref([
-  "React Native",
-  "TypeScript",
-  "Node.js",
-  "Express.js",
-  "MySQL",
-  "CodeIgniter 4",
-  "Laravel",
-  "PHP",
-  "CI/CD",
-  "SQL Server",
-  "PostgreSQL",
-]);
+const skills = ref({
+  mobile: [
+    "React Native",
+    "Expo",
+    "Push Notification",
+    "Geolocation"
+  ],
+  frontend: [
+    "React",
+    "Vue.js",
+    "TypeScript",
+    "Tailwind CSS",
+  ],
+  backend: [
+    "Node.js",
+    "Express.js",
+    "CodeIgniter 4",
+    "Laravel",
+    "PHP",
+    "Java",
+    "Spring Boot",
+    "Python",
+    "FastAPI",
+    "Golang",
+    "Rest API",
+  ],
+  database: [
+    "MySQL",
+    "PostgreSQL",
+    "SQL Server",
+  ],
+  devops: [
+    "CI/CD",
+  ],
+});
 
 // Add smooth scroll function
 function scrollToProjects() {
@@ -232,17 +254,24 @@ onMounted(() => {
             </p>
 
             <h3 class="text-2xl font-semibold mb-4">{{ t("about.skills") }}</h3>
-            <div class="flex flex-wrap gap-3 mb-8">
-              <span
-                v-for="skill in skills"
-                :key="skill"
-                class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium"
-              >
-                {{ skill }}
-              </span>
+            <div class="space-y-6">
+              <div v-for="(skillList, category) in skills" :key="category" class="mb-6">
+                <h4 class="text-xl font-semibold mb-3 capitalize text-gray-700">
+                  {{ category }}
+                </h4>
+                <div class="flex flex-wrap gap-3">
+                  <span
+                    v-for="skill in skillList"
+                    :key="skill"
+                    class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium"
+                  >
+                    {{ skill }}
+                  </span>
+                </div>
+              </div>
             </div>
 
-            <p class="text-lg text-gray-700 mb-6">
+            <p class="text-lg text-gray-700 mb-6 mt-12">
               {{ t("about.current") }}
             </p>
           </div>
