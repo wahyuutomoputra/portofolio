@@ -46,7 +46,12 @@ const projects = ref<Project[]>([
       "Biometric Authentication",
     ],
     link: "private",
-    screenshots: ["/kanvas/1.jpeg", "/kanvas/2.jpeg", "/kanvas/3.jpeg", "/kanvas/4.jpeg"],
+    screenshots: [
+      "/kanvas/1.jpeg",
+      "/kanvas/2.jpeg",
+      "/kanvas/3.jpeg",
+      "/kanvas/4.jpeg",
+    ],
   },
   {
     id: 2,
@@ -100,6 +105,19 @@ const projects = ref<Project[]>([
     link: "private",
     screenshots: ["/meyz/1.jpeg", "/meyz/2.jpeg", "/meyz/3.jpeg"],
   },
+  {
+    id: 5,
+    title: "Yomi Match",
+    description:
+      locale.value === "en"
+        ? "A Japanese writing system learning app that helps you master different writing systems through interactive matching exercises."
+        : "Aplikasi pembelajaran sistem penulisan Jepang yang membantu Anda menguasai berbagai sistem penulisan melalui latihan pencocokan interaktif.",
+    image:
+      "https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=800",
+    technologies: ["React.js", "Next.js", "Tailwind CSS"],
+    link: "https://github.com/wahyuutomoputra/yomi-match",
+    screenshots: ["yomi/yomi1.png"],
+  },
 ]);
 
 // Watch for language changes to update projects
@@ -110,18 +128,8 @@ watch(locale, () => {
 
 // Add skills data
 const skills = ref({
-  mobile: [
-    "React Native",
-    "Expo",
-    "Push Notification",
-    "Geolocation"
-  ],
-  frontend: [
-    "React",
-    "Vue.js",
-    "TypeScript",
-    "Tailwind CSS",
-  ],
+  mobile: ["React Native", "Expo", "Push Notification", "Geolocation"],
+  frontend: ["React", "Vue.js", "TypeScript", "Tailwind CSS"],
   backend: [
     "Node.js",
     "Express.js",
@@ -135,14 +143,8 @@ const skills = ref({
     "Golang",
     "Rest API",
   ],
-  database: [
-    "MySQL",
-    "PostgreSQL",
-    "SQL Server",
-  ],
-  devops: [
-    "CI/CD",
-  ],
+  database: ["MySQL", "PostgreSQL", "SQL Server"],
+  devops: ["CI/CD"],
 });
 
 // Add smooth scroll function
@@ -255,7 +257,11 @@ onMounted(() => {
 
             <h3 class="text-2xl font-semibold mb-4">{{ t("about.skills") }}</h3>
             <div class="space-y-6">
-              <div v-for="(skillList, category) in skills" :key="category" class="mb-6">
+              <div
+                v-for="(skillList, category) in skills"
+                :key="category"
+                class="mb-6"
+              >
                 <h4 class="text-xl font-semibold mb-3 capitalize text-gray-700">
                   {{ category }}
                 </h4>
