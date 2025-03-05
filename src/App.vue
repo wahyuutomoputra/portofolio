@@ -126,6 +126,18 @@ const projects = ref<Project[]>([
       "/yomi/7.png",
     ],
   },
+  {
+    id: 6,
+    title: "Absence Management System API",
+    description:
+      locale.value === "en"
+        ? "RESTful API for managing employee attendance, leave requests, and work schedules."
+        : "API RESTful untuk mengelola kehadiran karyawan, pengajuan cuti, dan jadwal kerja.",
+    image:
+      "https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=800",
+    technologies: ["Golang", "Gin", "Gorm", "MySQL", "JWT", "Swagger"],
+    link: "https://github.com/wahyuutomoputra/absence",
+  },
 ]);
 
 // Watch for language changes to update projects
