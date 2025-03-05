@@ -116,7 +116,15 @@ const projects = ref<Project[]>([
       "https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=800",
     technologies: ["React.js", "Next.js", "Tailwind CSS"],
     link: "https://github.com/wahyuutomoputra/yomi-match",
-    screenshots: ["yomi/yomi1.png"],
+    screenshots: [
+      "/yomi/1.png",
+      "/yomi/2.png",
+      "/yomi/3.png",
+      "/yomi/4.png",
+      "/yomi/5.png",
+      "/yomi/6.png",
+      "/yomi/7.png",
+    ],
   },
 ]);
 
