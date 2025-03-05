@@ -134,7 +134,7 @@ const projects = ref<Project[]>([
         ? "RESTful API for managing employee attendance, leave requests, and work schedules."
         : "API RESTful untuk mengelola kehadiran karyawan, pengajuan cuti, dan jadwal kerja.",
     image:
-      "https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=800",
+      "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=800",
     technologies: ["Golang", "Gin", "Gorm", "MySQL", "JWT", "Swagger"],
     link: "https://github.com/wahyuutomoputra/absence",
   },
