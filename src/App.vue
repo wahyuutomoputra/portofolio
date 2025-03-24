@@ -138,6 +138,25 @@ const projects = ref<Project[]>([
     technologies: ["Golang", "Gin", "Gorm", "MySQL", "JWT", "Swagger"],
     link: "https://github.com/wahyuutomoputra/absence",
   },
+  {
+    id: 7,
+    title: "Absence Management System Mobile",
+    description:
+      locale.value === "en"
+        ? "Mobile application for employee attendance management with features like check-in/out, leave requests, and work schedule viewing. Includes geolocation verification, real-time notifications, and offline support."
+        : "Aplikasi mobile untuk manajemen kehadiran karyawan dengan fitur check-in/out, pengajuan cuti, dan melihat jadwal kerja. Dilengkapi verifikasi geolokasi, notifikasi real-time, dan dukungan offline.",
+    image:
+      "https://images.unsplash.com/photo-1526045431048-f857369baa09?q=80&w=800",
+    technologies: ["React Native", "Zustand", "React Query", "Expo"],
+    link: "https://github.com/wahyuutomoputra/absence",
+    screenshots: [
+      "/attendance/1.png",
+      "/attendance/2.png",
+      "/attendance/3.png",
+      "/attendance/4.png",
+      "/attendance/5.png",
+    ],
+  },
 ]);
 
 // Watch for language changes to update projects
