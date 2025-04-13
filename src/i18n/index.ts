@@ -26,7 +26,8 @@ const messages = {
       viewProject: 'View Project',
       privateNotice: 'Sorry, this application is private and cannot be accessed publicly.',
       viewOnGithub: 'View on GitHub',
-      privacyNotice: 'Cannot display all features due to client privacy'
+      privacyNotice: 'Cannot display all features due to client privacy',
+      visitWebsite: 'Visit Website'
     },
     contact: {
       title: "Let's Connect",
@@ -58,7 +59,8 @@ const messages = {
       viewProject: 'Lihat Proyek',
       privateNotice: 'Maaf, aplikasi ini bersifat private dan tidak dapat diakses publik.',
       viewOnGithub: 'Lihat di GitHub',
-      privacyNotice: 'Tidak dapat menampilkan semua fitur karena privasi client'
+      privacyNotice: 'Tidak dapat menampilkan semua fitur karena privasi client',
+      visitWebsite: 'Kunjungi Website'
     },
     contact: {
       title: 'Mari Terhubung',
